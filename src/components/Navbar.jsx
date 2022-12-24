@@ -41,7 +41,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styled.navigation__title} title={"foodyar"}>
-            Foodyar
+            Gayee
           </div>
         </div>
         <div className={styled.navigation__right}>
