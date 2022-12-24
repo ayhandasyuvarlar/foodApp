@@ -128,3 +128,6 @@ table {
 .App {
   font-family: "Lexend Deca", sans-serif;
 }
+body {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
