@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "./home.module.scss";
 import bannerImg from "../../img/food.png";
-import { Animate,AnimateGroup } from "react-simple-animate";
+import { Animate, AnimateGroup } from "react-simple-animate";
+import LazyLoad from "react-lazyload";
 const title = "Eat What You Cook With Us, Together!";
 const text =
   "When you eat something that cooked by yourself, the happiness is priceless.";
@@ -41,11 +42,11 @@ const Banner = () => {
         </AnimateGroup>
       </div>
       <div className={styled.banner_container__right}>
-        <Animate play start={{ opacity: 0 }} end={{ opacity: 1 }}>
-          <aside className={styled.banner_container__img}>
+        <aside className={styled.banner_container__img}>
+          <LazyLoad height={420}>
             <img src={bannerImg} alt="bannerImg" />
-          </aside>
-        </Animate>
+          </LazyLoad>
+        </aside>
       </div>
     </section>
   );
