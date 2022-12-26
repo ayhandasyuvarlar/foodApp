@@ -1,8 +1,8 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import React from "react";
-import "./style/App.css";
+import "./style/App.css"
 const Lazy = React.lazy(() => import("./scenes/home"));
 
 function App() {

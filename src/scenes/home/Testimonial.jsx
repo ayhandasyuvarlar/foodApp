@@ -10,30 +10,32 @@ const user = {
 };
 const Testimonial = () => {
   return (
-    <section className={styled.testimonial_container}>
-      <div className={styled.testimonial_container__text}>
-        <p>{text}</p>
-      </div>
-      <div className={styled.testimonial_container__user}>
-        <div className={styled.testimonial_container__userImg}>
-          <img src={user.userImg} alt="" />
+   
+      <section className={styled.testimonial_container}>
+        <div className={styled.testimonial_container__text}>
+          <p>{text}</p>
         </div>
-        <div className={styled.testimonial_container__userDetails}>
-          <h1
-            title={user.userName}
-            className={styled.testimonial_container__userName}
-          >
-            {user.userName}
-          </h1>
-          <p
-            title={user.level}
-            className={styled.testimonial_container__userLevel}
-          >
-            {user.level}
-          </p>
+        <div className={styled.testimonial_container__user}>
+          <div className={styled.testimonial_container__userImg}>
+            <img src={user.userImg} alt="" />
+          </div>
+          <div className={styled.testimonial_container__userDetails}>
+            <h1
+              title={user.userName}
+              className={styled.testimonial_container__userName}
+            >
+              {user.userName}
+            </h1>
+            <p
+              title={user.level}
+              className={styled.testimonial_container__userLevel}
+            >
+              {user.level}
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
   );
 };
 
