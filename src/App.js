@@ -5,7 +5,13 @@ import HomePage from "./scenes/home";
 import React from "react";
 import "./style/App.css";
 const Lazy = React.lazy(() => import("./scenes/home"));
+
 function App() {
+  const setLoading = (
+    <div style={{ width: "100%", textAlign: "center", margin: "40px auto" }}>
+      <span class="loader"></span>
+    </div>
+  );
   return (
     <section className="App">
       <BrowserRouter>
@@ -15,7 +21,7 @@ function App() {
             <Route
               path="/"
               element={
-                <React.Suspense fallback="loading...">
+                <React.Suspense fallback={setLoading}>
                   <Lazy />
                 </React.Suspense>
               }
