@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "./home.module.scss";
 import appImg from "../../img/app.png";
-const title = "Download our app and join the contest";
+const title = "Download our app and join the of contest";
 const text =
   "In order to improve our cooking skills, we do need a food photography ";
 const App = () => {
@@ -25,3 +25,4 @@ const App = () => {
 };
 
 export default App;
+
